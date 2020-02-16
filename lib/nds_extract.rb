@@ -83,7 +83,6 @@ def gross_per_studio(collection)
     gross += collection[index][:worldwide_gross]
     totals.push({:studio => studio, :gross => gross})
     index += 1
-        binding.pry
   end
   totals
 end
