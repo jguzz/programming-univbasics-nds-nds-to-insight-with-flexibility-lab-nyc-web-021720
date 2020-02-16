@@ -107,7 +107,7 @@ def movies_with_directors_set(source)
     movies = source[index][:movies]
     totals.push({:movies => movies, :director_name => name})
     index += 1
-
+    binding.pry
   end
   totals
 end
