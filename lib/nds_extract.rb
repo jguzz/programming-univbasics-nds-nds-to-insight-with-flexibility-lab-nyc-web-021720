@@ -103,7 +103,7 @@ def movies_with_directors_set(source)
   while collection.length > index do
     name = collection[index][:director_name]
     movies += collection[index][:title]
-    totals.push({:name => name, :movies => movies})
+    totals.push({:director_name => name, :movies => movies})
     index += 1
   end
   totals
