@@ -83,7 +83,7 @@ def gross_per_studio(collection)
     gross += collection[index][:worldwide_gross]
     totals.push({:studio => studio, :gross => gross})
     index += 1
-
+        binding.pry
   end
   totals
 end
@@ -107,7 +107,6 @@ def movies_with_directors_set(source)
     movies = source[index][:movies]
     totals.push({:movies => movies, :director_name => name})
     index += 1
-    binding.pry
   end
   totals
 end
