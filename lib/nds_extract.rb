@@ -76,7 +76,7 @@ def gross_per_studio(collection)
   #
   # Hash whose keys are the studio names and whose values are the sum
   # total of all the worldwide_grnmoss numbers for every movie in the input Hash
-  
+
   # totals = []
   # index = 0
   # gross = 0
@@ -101,16 +101,16 @@ def movies_with_directors_set(source)
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.]
 
-  # totals = []
-  # index = 0
-  # gross = 0
-  # while source.length > index do
-  #   name = source[index][:name]
-  #   movies = source[index][:movies]
-  #   totals.push({:movies => movies, :director_name => name})
-  #   index += 1
-  # end
-  # totals
+  totals = []
+  index = 0
+  gross = 0
+  while source.length > index do
+    name = source[index][:name]
+    movies = source[index][:movies]
+    totals.push({:movies => movies, :director_name => name})
+    index += 1
+  end
+  totals
 end
 
 # ----------------    End of Your Code Region --------------------
