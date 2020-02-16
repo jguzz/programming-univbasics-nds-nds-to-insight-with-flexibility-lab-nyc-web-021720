@@ -58,6 +58,7 @@ def movies_with_director_key(name, movies_collection)
     movies = movie_with_director_name(name, movies_collection[index])
     movies_with_dir.push({:title => movies[:title], :director_name => movies[:director_name]})
     index += 1
+    binding.pry
   end
   movies_with_dir
 end
