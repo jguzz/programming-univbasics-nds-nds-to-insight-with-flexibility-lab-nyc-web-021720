@@ -1,6 +1,7 @@
 # Provided, don't edit
 require 'directors_database'
 require 'pp'
+require 'pry'
 
 # A method we're giving you. This "flattens"  Arrays of Arrays so: [[1,2],
 # [3,4,5], [6]] => [1,2,3,4,5,6].
@@ -82,6 +83,7 @@ def gross_per_studio(collection)
     gross += collection[index][:worldwide_gross]
     totals.push({:studio => studio, :gross => gross})
     index += 1
+    
   end
   totals
 end
@@ -105,6 +107,7 @@ def movies_with_directors_set(source)
     movies = source[index][:movies]
     totals.push({:movies => movies, :director_name => name})
     index += 1
+    
   end
   totals
 end
